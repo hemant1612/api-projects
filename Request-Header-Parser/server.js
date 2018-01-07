@@ -3,10 +3,6 @@ var app = express();
 
 
 app.get("/api/whoami", function (request, response) {
-  console.log();
-  console.log(request.headers['accept-language']);
-  console.log(request.headers['user-agent']);
-
   var Resobj = {
     'ip-address' : request.headers['x-forwarded-for'] ? request.headers['x-forwarded-for'].split(',')[0] : 'Not known',
     'language' : request.headers['accept-language'].split(',')[0],
