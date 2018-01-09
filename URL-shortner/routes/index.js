@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://hemant:12345@ds247327.mlab.com:47327/orion', {useMongoClient: true});
+mongoose.connect('dburl', {useMongoClient: true});
 mongoose.Promise = global.Promise;
 
 var urlSchema = mongoose.Schema({originalURL: String, shortenURL: String})
