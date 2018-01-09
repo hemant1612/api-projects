@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <h2 class="title">
+      <%= title %>
+  </h2>
+  <div class="url-shortner">
+    <form action="api" method="post">
+      <div class="form-group row">
+        <label for="url">ENTER URL</label>
+
+        <input type="url" id="url" name="url" />
+
+      </div>
+      <button type="submit" class="btn btn-success">SHORTEN</button>
+    </form>
+  </div>
+</body>
+
 </html>

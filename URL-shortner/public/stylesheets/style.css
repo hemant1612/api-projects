@@ -1,6 +1,26 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color:#333 !important;
+}
+.title {
+  font-family: monospace;
+  padding:30px;
+}
+input{
+  width:100%;
+}
+.btn-success{
+  margin-left:35%;
+  margin-top:20px;
+}
+.url-shortner{
+  padding:70px;
+  background: #eee;
 }
 
 a {
